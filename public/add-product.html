@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregue producto/servicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/add-product.css">
+
+</head>
+<body>
+
+    <img src="../img/loading.gif" class="loader" alt="">
+
+    <h1 class="title">Agregar</h1>
+
+    <div class="error">
+        <p>Ocurrio un error</p>
+    </div>
+
+    <!-- produ detail -->
+    <section class="productSection">
+        <!-- upload image  -->
+        <div class="imageUploadContainer">
+            <input type="file" id="uploadImage" accept="image/png, image/jpeg" hidden>
+            <label for="uploadImage" class="uploadOverlay">upload image</label>
+            <img class="productImg">
+        </div>
+        
+        <div class="productDetail">
+            <h1 class="productTitle" contenteditable="true" data-placeholder="Nombre del producto">Tour</h1>
+            <p class="productDes" contenteditable="true" data-placeholder="Breve descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vero officiis hic aliquid nisi voluptatibus.</p>
+            <div class="ratings disable">
+                <img src="../img/fill star.png" class="star" alt="">
+                <img src="../img/fill star.png" class="star" alt="">
+                <img src="../img/fill star.png" class="star" alt="">
+                <img src="../img/fill star.png" class="star" alt="">
+                <img src="../img/no fill star.png" class="star" alt="">
+                <span class="ratingCount">15</span>
+            </div>
+            <p class="price" contenteditable="true" data-placeholder="Precio sin $"></p>
+            <div class="btnContainer disable">
+                <button class="productBtn buyBtn">buy now</button>
+                <button class="productBtn cartBtn">add to cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="detailDes">
+        <h1 class="sectionTitle">Detalles</h1>
+        <p class="des" contenteditable="true" data-placeholder="Escriba detalles, puede agregar imagenes utilizando html"></p>
+
+    </section>
+
+    <section class="tagsSection">
+        <h1 class="sectionTitle">tags</h1>
+        <p class="text">Escriba algunos tags que ayuden identificar el producto</p>
+        <p class="tags" contenteditable="true" data-placeholder="detalles">al menos 3 tags</p>
+
+    </section>
+
+    <div class="btnWrapper">
+        <button class="productBtn addProductBtn">Agregar</button>
+        <button class="productBtn draftBtn">Guardar</button>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/add-product.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- link CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/add-product.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+</head>
+<body>
+
+    <nav class="navbar dark"></nav>
+
+    <div class="error">
+        <p>Ocurrio un error</p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">checkout</h1>
+        <p class="text">Direccion de envio</p>
+
+        <input type="text" id="address" placeholder="Direccion">
+        <input type="text" id="street" placeholder="Calle">
+        <div class="threeInputContainer">
+            <input type="text" id="city" placeholder="Cuidad">
+            <input type="text" id="state" placeholder="Provincia/Estado">
+            <input type="text" id="pincode" placeholder="Codigo postal/ pin code">
+        </div>
+        <input type="text" id="landmark" placeholder="Pais">
+    </div>
+
+    <div class="cartSection">
+        <div class="productList">
+            <p class="sectionHeading">Su Carro</p>
+            <div class="cartContainer">
+               
+            </div>
+        </div>
+
+        <div class="checkoutSection">
+            <div class="checkoutBox">
+                <p class="text">Total a pagar</p>
+                <h1 class="bill">$00</h1>
+                <button class="placeOrderBtn">Ordenar</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/cart.js"></script>
+    
+</body>
+</html>

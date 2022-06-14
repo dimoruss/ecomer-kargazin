@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #b1afaf;
+    padding: 20px 5vw;
+    font-family: 'lato', sans-serif;
+}
+
+.addProduct{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.text{
+    font-size: 1.2rem;
+}
+
+.addProductBtn{
+    font-family: 'cinzel';
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #6eace5;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.sellerProducts{
+    margin-top: 30px;
+}
+
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.productCard{
+    width: 100%;
+    max-width: 300px;
+}
+
+.productName{
+    position: absolute;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'lato', sans-serif;
+    font-size: 25px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.noProduct{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    display: none;
+}
+
+.btn{
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #6eace5;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.productCard:hover .btn{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.openBtn{
+    top: 60px;
+}
+
+.deleteBtn{
+    top: 110px;
+}
+
+.btn img{
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+
+.loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    z-index: 5;
+    display: none;
+}

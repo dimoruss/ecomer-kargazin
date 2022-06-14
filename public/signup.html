@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+<body>
+
+    <img src="img/loading.gif" class="loader" alt="">
+
+    <section class="formSection">
+        <div class="formContainer">
+            <div class="form">
+                <h1 class="formHeading">Registrese aqui</h1>
+                <input type="text" autocomplete="off" id="name" placeholder="Nombre y Apellido">
+                <input type="email" autocomplete="off" id="email" placeholder="email">
+                <input type="password" autocomplete="off" id="password" placeholder="password">
+                <input type="number" autocomplete="off" id="number" placeholder="Numero mobil">
+                <span class="error">*error</span>
+
+                <div>
+                    <input type="checkbox" id="tc"><label for="tc" class="tcText">Acepto los <a href="#">termiunos y condiciones</a></label>
+                </div>
+
+                <button class="submitBtn">sign up</button>
+                <a href="/login" class="otherFormLink">Si ya tiene cuenta, ingrese aqui</a>
+            </div>
+            <img src="img/tur2.jpeg" class="formImg" alt="">
+        </div>
+    </section>
+    
+    <script src="js/common.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>
